@@ -8,17 +8,16 @@ export default class Responsive  extends Component {
     const elementButton = (value) => (
       <TouchableOpacity onPress={() => this._alertIndex(value)}>
         <View style={styles.btn}>
-          <Text style={styles.btnText}>button</Text>
+          <Text style={styles.btnText}>Button</Text>
         </View>
       </TouchableOpacity>
     );
-
     this.state = {
-      tableTitle: ['Title', 'Title2', 'Title3', 'Title4'],
+      tableTitle: ['Title1', 'Title2', 'Title3', 'Title4'],
       tableData: [
-        [elementButton('1'), 'a', 'b', 'c', 'd'],
-        [elementButton('2'), '1', '2', '3', '4'],
-        [elementButton('3'), 'a', 'b', 'c', 'd']
+        [elementButton('1'), 'ATUL KUMAR', 'ATUL KUMAR', 'ATUL KUMAR', 'ATUL KUMAR'],
+        [elementButton('2'), '9793178230', '9793178230', '9793178230', '9793178230'],
+        [elementButton('3'), '9793178230', '9793178230', '9793178230', '9793178230']
       ]
     }
   }
@@ -31,7 +30,7 @@ export default class Responsive  extends Component {
     const state = this.state;
     return (
       <View style={styles.container}>
-      {/* <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "white" translucent = {true}/> */}
+      <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#00BCD4" translucent = {true}/>
         <Table style={{flexDirection: 'row'}} borderStyle={{borderWidth: 1}}>
           {/* Left Wrapper */}
           <TableWrapper style={{width: 80}}>
@@ -55,8 +54,8 @@ export default class Responsive  extends Component {
 const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    padding: 5,
-    paddingTop: 2,
+    padding: 1,
+    paddingTop: 50,
     backgroundColor: '#fff',
     },
   singleHead: {
