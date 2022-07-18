@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Alert } from 'react-native';
 import { Table, TableWrapper,Col, Cols, Cell } from 'react-native-table-component';
 import { StatusBar } from 'react-native'
-export default class ExampleFive extends Component {
+export default class Responsive  extends Component {
   constructor(props) {
     super(props);
     const elementButton = (value) => (
@@ -31,7 +31,7 @@ export default class ExampleFive extends Component {
     const state = this.state;
     return (
       <View style={styles.container}>
-      <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#00BCD4" translucent = {true}/>
+      {/* <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "white" translucent = {true}/> */}
         <Table style={{flexDirection: 'row'}} borderStyle={{borderWidth: 1}}>
           {/* Left Wrapper */}
           <TableWrapper style={{width: 80}}>
@@ -55,8 +55,8 @@ export default class ExampleFive extends Component {
 const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    padding: 16,
-    paddingTop: 30,
+    padding: 5,
+    paddingTop: 2,
     backgroundColor: '#fff',
     },
   singleHead: {
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     height: 18,
     marginLeft: 15,
     backgroundColor: '#c8e1ff',
-    borderRadius: 2,
+    borderRadius: 5,
       },
   btnText: { 
     textAlign: 'center',
